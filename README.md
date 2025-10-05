@@ -31,20 +31,20 @@ O objetivo é oferecer uma navegação fluida e moderna, valorizando a estética
 - **📱 Layout Responsivo:** Totalmente adaptável para dispositivos móveis, tablets e desktops.
 - **⚡ Performance Otimizada:** Construído com Vite e técnicas de otimização visual e de código.
 - **🧩 Componentes Reutilizáveis:** Estrutura organizada e de fácil manutenção.
-- ** 🎨 Design Minimalista:** Interface moderna com cores suaves e foco na legibilidade.
+- **🎨 Design Minimalista:** Interface moderna com cores suaves e foco na legibilidade.
 
 ## ⚙️ Como Rodar o Projeto
 
 ### 1. Clone este repositório
 
 ```bash
-git clone https://github.com/gustavo-gsilva/novoPortfolio.git
+git clone https://github.com/gustavo-gsilva/novo-portfolio.git
 ```
 
 ### 2. Acesse a pasta do projeto:
 
 ```bash
-cd novoPortfolio
+cd novo-portfolio
 ```
 
 ### 3. Instale as dependências:
