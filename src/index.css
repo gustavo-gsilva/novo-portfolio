@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+html {
+   height: 100dvh;
+   font-size: 62.15%;
+   font-family: 'JetBrains Mono', sans-serif;
+   background-color: #0A192F;
+}
+
+/* Estilização do ScrollBar */
+
+/* Tamanho da barra */
+::-webkit-scrollbar {
+   width: 11px;
+   height: 11px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+   background: #0A192F;
+   border-radius: 15px;
+}
+
+/* "Polegar" (a parte que desliza) */
+::-webkit-scrollbar-thumb {
+   background: #4181e9;
+   border-radius: 10px;
+   border: 2px solid #1e293b;
+   /* borda para dar efeito */
+}
+
+/* Hover no polegar */
+::-webkit-scrollbar-thumb:hover {
+   background: #2563eb;
+}
+
+/* Sombras dos containers de Skills */
+.shadow-orange:hover {
+   box-shadow: 0px 0px 49px 5px rgba(255, 140, 0, 0.6);
+}
+
+.shadow-blue:hover {
+   box-shadow: 0px 0px 49px 5px rgba(34, 148, 255, 0.6);
+}
+
+.shadow-yellow:hover {
+   box-shadow: 0px 0px 49px 5px rgba(231, 231, 63, 0.6);
+}
+
+.shadow-aqua:hover {
+   box-shadow: 0px 0px 49px 5px rgba(36, 177, 193, 0.6);
+}
+
+.shadow-red:hover {
+   box-shadow: 0px 0px 49px 5px rgba(182, 4, 4, 0.6);
+}
+
+.shadow-white:hover {
+   box-shadow: 0px 0px 49px 5px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes slide {
+   0% {
+      transform: translateX(0);
+   }
+
+   50% {
+      transform: translateX(-100%);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.fadeIn {
+   animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-slide {
+   animation: slide 2s infinite ease-in-out;
+}
