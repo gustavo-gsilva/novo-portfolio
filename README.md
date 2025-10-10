@@ -61,7 +61,7 @@ npm run dev
 
 ---
 
-🔗 Veja também o arquivo [`CHANGELOG.md`](./CHANGELOG.md) para detalhes das atualizações.
+🔗 Veja também o arquivo [`CHANGELOG.MD`](./CHANGELOG.MD) para detalhes das atualizações.
 
 ## 📸 Demonstração 
 
@@ -82,4 +82,3 @@ npm run dev
   ![Página projetos mobile](./src/assets/images/imagem-mobile-3.png)
 
   ![Página contato mobile](./src/assets/images/imagem-mobile-4.png)
-  
