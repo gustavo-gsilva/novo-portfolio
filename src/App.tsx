@@ -9,7 +9,8 @@ import ContactPage from "./pages/ContactPage";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [initialLoading, setInitialLoading] = useState(true);
+  const [routeLoading, setRouteLoading] = useState(true);
   const [fadeIn, setFadeIn] = useState(false);
 
   const location = useLocation();
@@ -18,9 +19,9 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false),
+      setInitialLoading(false),
         setFadeIn(true)
-    }, 1800);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -28,12 +29,14 @@ function App() {
   // useEffect que controla o loadingScreen ao trocar de página
 
   useEffect(() => {
-    setIsLoading(true);
+    setRouteLoading(true);
 
-    const timer = setTimeout(() => setIsLoading(false), 1800);
+    const timer = setTimeout(() => setRouteLoading(false), 2000);
 
     return () => clearTimeout(timer);
   }, [location]);
+
+  const isLoading = initialLoading || routeLoading;
 
   return (
     <>
