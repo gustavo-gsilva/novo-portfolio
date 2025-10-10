@@ -1,11 +1,19 @@
 import { projects } from "../projectsData";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function useProjectCarousel() {
    const [current, setCurrent] = useState(0);
    const [animating, setAnimating] = useState(false);
    const [slideDirection, setSlideDirection] = useState<"left" | "right" | "">("");
+
+   useEffect(() => {
+      const preloadPrev = new Image();
+      if (projects[current - 1]) preloadPrev.src = projects[current - 1].image;
+
+      const preloadNext = new Image();
+      if (projects[current + 1]) preloadNext.src = projects[current + 1].image;
+   }, [current]);
 
    const handlePrev = () => {
       if (current > 0) {
