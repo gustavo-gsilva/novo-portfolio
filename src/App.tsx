@@ -21,7 +21,7 @@ function App() {
     const timer = setTimeout(() => {
       setInitialLoading(false),
         setFadeIn(true)
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);

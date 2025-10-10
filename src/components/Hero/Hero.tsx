@@ -3,12 +3,18 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Typewriter from 'typewriter-effect';
+import { useEffect } from "react";
 
 import profileImage from "../../assets/images/foto-de-perfil.webp";
 
 function Hero() {
    const texts = ["Frontend Developer", "React Developer"];
    const maxLength = Math.max(...texts.map((t) => t.length));
+
+   useEffect(() => {
+      const img = new Image();
+      img.src = profileImage;
+   }, []);
 
    return (
       <section className="h-screen lg:h-[calc(100vh-9rem)] flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-around">
