@@ -13,7 +13,7 @@ function Hero() {
    return (
       <section className="h-screen lg:h-[calc(100vh-9rem)] flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-around">
          {/* // Foto de perfil da versão responsiva // */}
-         <img className="w-110 h-110 sm:w-130 sm:h-130 object-cover rounded-full border-2 border-sky-600 lg:hidden" loading="lazy" src={profileImage} alt="Foto de Perfil" />
+         <img className="w-110 h-110 sm:w-130 sm:h-130 object-cover rounded-full border-2 border-sky-600 lg:hidden" loading="eager" src={profileImage} alt="Foto de Perfil" />
 
          <div>
             <h1 className="text-blue-50 text-[3.8rem] sm:text-[5rem] text-center lg:text-left lg:text-[7rem] font-bold">
