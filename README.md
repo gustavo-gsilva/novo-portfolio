@@ -59,6 +59,10 @@ npm install
 npm run dev
 ```
 
+---
+
+🔗 Veja também o arquivo [`CHANGELOG.md`](./CHANGELOG.md) para detalhes das atualizações.
+
 ## 📸 Demonstração
 
 - **Imagens versão desktop**  

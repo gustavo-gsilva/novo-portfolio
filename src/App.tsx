@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
@@ -6,7 +7,6 @@ import ProfilePage from "./pages/ProfilePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
-import { useEffect, useState } from "react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false),
-      setFadeIn(true)
+        setFadeIn(true)
     }, 1800);
 
     return () => clearTimeout(timer);
@@ -37,9 +37,7 @@ function App() {
 
   return (
     <>
-      {isLoading === true ?
-        <LoadingScreen />
-        :
+      {isLoading === true ? <LoadingScreen /> :
         <div className={fadeIn ? "fadeIn" : ""}>
           <Header />
           <Routes>

@@ -5,9 +5,9 @@ import iconReact from "./assets/icons/icon-react-js.svg";
 import iconTailWind from "./assets/icons/icon-tailwind-css.svg";
 import iconTypeScript from "./assets/icons/icon-typescript.svg";
 
-import imageProject1 from "./assets/images/projeto-buscador-de-usuarios-github.png";
-import imageProject2 from "./assets/images/projeto-resident-evil-4.png";
-import imageProject3 from "./assets/images/projeto-rastreador-de-ip.png";
+import imageProject1 from "./assets/images/projeto-buscador-de-usuarios-github.webp";
+import imageProject2 from "./assets/images/projeto-resident-evil-4.webp";
+import imageProject3 from "./assets/images/projeto-rastreador-de-ip.webp";
 
 export const projects = [
    {
