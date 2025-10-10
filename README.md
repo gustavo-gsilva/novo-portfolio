@@ -63,7 +63,7 @@ npm run dev
 
 🔗 Veja também o arquivo [`CHANGELOG.md`](./CHANGELOG.md) para detalhes das atualizações.
 
-## 📸 Demonstração
+## 📸 Demonstração 
 
 - **Imagens versão desktop**  
   ![Página home desktop](./src/assets/images/imagem-1.png)
